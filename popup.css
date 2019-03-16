@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    min-height: 180px;
+    padding: 0;
+    width: 384px;
+}
+
+h1 {
+    margin: 0;
+    color: blue;
+}
+
+a:link, a:visited {
+    color: black;
+    outline: 0;
+    text-decoration: none;
+}
+
+img {
+    width: 280px;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 0.5px solid white
+}
+
+.modal-content {
+    padding: 0 22px;
+}
+
+.logo {
+    padding: 16px;
+}
+
+.logo-icon {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+}
+
+.version {
+    color: grey;
+    font-size: 18px;
+}

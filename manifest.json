@@ -1,0 +1,25 @@
+{
+    "name": "Retain EXT",
+    "version": "1.0.0",
+    "description": "Retain extension for reviews",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon_16.png",
+            "128": "icon_128.png"
+          }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "128": "icon_128.png"
+      },
+    "manifest_version": 2
+}
