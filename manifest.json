@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "Retain extension for reviews",
     "permissions": [
-        "activeTab",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "browser_action": {
         "default_popup": "popup.html",
