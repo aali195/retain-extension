@@ -34,4 +34,4 @@ function saveSettings(event){
         });
     }
     // restart other script
-} 
+}
