@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function restoreSettings() {
     chrome.storage.local.get('onoff', function(data) {
         var onoff = data.onoff;
-        if(onoff == 1) {
+        if (onoff == 1) {
             checkbox.checked = true;
             console.log("Export checkbox 1");
         } else {
@@ -22,7 +22,7 @@ function restoreSettings() {
 
 function saveSettings(event){
     console.log("saving");
-    if(checkbox.checked) {
+    if (checkbox.checked) {
         var value = 1;
         chrome.storage.local.set({'onoff': value}, function() {
             console.log("Saving setting 1");
@@ -33,5 +33,9 @@ function saveSettings(event){
             console.log("Saving setting 0");
         });
     }
-    // restart other script
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {greeting: 2}, function(response) {
+            console.log(response.farewell);
+        });
+    });
 }
